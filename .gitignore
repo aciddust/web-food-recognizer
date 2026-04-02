@@ -1,0 +1,31 @@
+.vscode
+node_modules
+
+# Output
+.output
+.vercel
+.netlify
+.wrangler
+/.svelte-kit
+/build
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Env
+.env
+.env.*
+!.env.example
+!.env.test
+
+# Superpowers
+docs/superpowers/
+.superpowers/
+
+# Claude
+.claude/
+
+# Vite
+vite.config.js.timestamp-*
+vite.config.ts.timestamp-*
