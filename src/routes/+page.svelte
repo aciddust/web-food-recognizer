@@ -1,7 +1,8 @@
 <script lang="ts">
+	import { base } from '$app/paths';
 	import { resolve } from '$app/paths';
 	import { Button } from '$lib/components/ui/button';
-	import { Camera, ScanSearch, UtensilsCrossed, ArrowRight } from '@lucide/svelte';
+	import { Camera, ScanSearch, UtensilsCrossed, ArrowRight, FileText } from '@lucide/svelte';
 </script>
 
 <div class="flex min-h-dvh flex-col items-center justify-center px-4 py-12">
@@ -37,6 +38,10 @@
 		<Button href={resolve('/camera')} class="w-full gap-2" size="lg">
 			시작하기
 			<ArrowRight class="h-4 w-4" />
+		</Button>
+		<Button href="{base}/finetune.html" class="w-full gap-2" size="lg" variant="outline">
+			모델 전이학습 히스토리
+			<FileText class="h-4 w-4" />
 		</Button>
 	</div>
 </div>
