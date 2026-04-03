@@ -25,7 +25,7 @@ export async function loadModel(
 		if (done) break;
 		chunks.push(value);
 		loaded += value.length;
-		onProgress?.(loaded, contentLength);
+		onProgress?.(loaded, contentLength > 0 ? Math.max(contentLength, loaded) : loaded);
 	}
 
 	const modelBuffer = new Uint8Array(loaded);

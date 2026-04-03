@@ -40,7 +40,11 @@
 			<ArrowRight class="h-4 w-4" />
 		</Button>
 		<Button href="{base}/finetune.html" class="w-full gap-2" size="lg" variant="outline">
-			모델 전이학습 히스토리
+			모델 전이학습 히스토리 1
+			<FileText class="h-4 w-4" />
+		</Button>
+		<Button href="{base}/finetune2.html" class="w-full gap-2" size="lg" variant="outline">
+			모델 전이학습 히스토리 2
 			<FileText class="h-4 w-4" />
 		</Button>
 	</div>
